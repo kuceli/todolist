@@ -1,0 +1,148 @@
+/* Basic Style */
+
+body {
+  /* background: #fff; */
+  background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
+  color: #333;
+  font-family: Lato, sans-serif;
+}
+
+.container {
+  display: block;
+  width: 500px;
+  margin: 30px auto 100px;
+  background-color: #fff;
+  padding: 0px 10px 10px 10px;
+  border-radius: 10px;
+}
+
+.new-task-container {
+  margin-top: 16px;
+  display: flex;
+  justify-content: space-between;
+  gap: 4px;
+}
+
+h2 {
+  text-align: center;
+  padding-top: 10px;
+  margin-bottom: 0px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li * {
+  float: left;
+}
+
+li,
+h3 {
+  clear: both;
+  list-style: none;
+}
+
+input,
+button {
+  outline: none;
+}
+
+button {
+  font-size: 16px;
+  font-family: Lato, sans-serif;
+  cursor: pointer;
+  height: 43px;
+  width: 63px;
+  background-color: white;
+}
+button:hover {
+  color: white;
+}
+#add-button,
+#save-button {
+  border: 2px solid #3a47d5;
+}
+#add-button:hover,
+#save-button:hover {
+  background-color: #3a47d5;
+}
+#save-button {
+  display: none;
+}
+#delete-button {
+  border: 2px solid red;
+}
+#delete-button:hover {
+  background-color: red;
+}
+#edit-button {
+  border: 2px solid #00d2ff;
+}
+#edit-button:hover {
+  background-color: #00d2ff;
+}
+
+/* Heading */
+
+h3,
+label[for="new-task"] {
+  color: #333;
+  font-weight: 700;
+  font-size: 15px;
+  border-bottom: 2px solid #333;
+  padding: 20px 0 10px;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+input[type="text"] {
+  margin: 0;
+  font-size: 18px;
+  line-height: 18px;
+  height: 18px;
+  padding: 10px;
+  border: 2px solid #3a47d5;
+  background: #fff;
+  font-family: Lato, sans-serif;
+  color: rgb(168, 168, 168);
+}
+input[type="text"]:hover,
+input[type="text"]:focus {
+  background-color: #f3fbfc;
+}
+input[type="text"]:focus {
+  color: #333;
+}
+
+/* New Task */
+
+label[for="new-task"] {
+  display: block;
+  margin: 0 0 20px;
+}
+
+#new-task {
+  width: 318px;
+}
+
+/* Task list */
+ul {
+  display: flex;
+  flex-direction: column-reverse;
+}
+li {
+  overflow: hidden;
+  padding: 20px 0;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+}
+
+li > p {
+  font-size: 18px;
+  line-height: 15px;
+  width: 237px;
+  padding: 0 0 0 8px;
+}
